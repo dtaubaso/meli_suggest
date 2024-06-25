@@ -79,9 +79,15 @@ st.set_page_config(
 )
 st.sidebar.empty()
 st.title("MeLi Suggest 🔍")
+st.write("")
+with st.expander('Acerca de esta aplicación'):
+    st.write("""Esta aplicación permite ver las sugerencias del buscador de Mercado Libre a partir de una palabra clave.
+""")
 st.session_state.keyword = st.text_input("Ingrese un término de búsqueda", st.session_state.keyword)
 pais_opcion = st.selectbox("Seleccione un país:", list(pais_dict.keys()))
 st.session_state.pais = pais_dict[pais_opcion]
+
+
 
 st.write("")
 try:
