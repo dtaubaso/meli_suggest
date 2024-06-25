@@ -80,7 +80,7 @@ st.set_page_config(
 st.sidebar.empty()
 st.title("MeLi Suggest 🔍")
 st.write("")
-st.subheader('Acerca de esta aplicación'):
+st.subheader('Acerca de esta aplicación')
 st.write("""Esta aplicación permite ver las sugerencias del buscador de Mercado Libre a partir de una palabra clave.
 """)
 st.session_state.keyword = st.text_input("Ingrese un término de búsqueda", st.session_state.keyword)
